@@ -1,9 +1,5 @@
 # workflow-graph-registry
 
-AVRO Schema Registry for Workflow Graph
-
-## Description
-
 AVRO Schema registry built with Spring Cloud Schema Registry.
 
 ## Why
