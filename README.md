@@ -39,3 +39,30 @@ Run the uber jar directly:
 ```shell
 java -jar target/workflow-graph-registry-0.0.1-SNAPSHOT.jar
 ```
+
+## Usage
+
+### Add Schema
+
+```shell
+curl --location --request POST 'http://localhost:8080/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "subject": "AlignParamsTest",
+    "format": "avro",
+    "definition": "{   \"type\" : \"record\",   \"name\" : \"AlignParamsTest\",   \"namespace\": \"org.icgc_argo.workflow_graph_lib.schema\",   \"fields\" : [      {        \"name\" : \"analysis_id\" ,        \"type\" : \"string\"      },      {        \"name\" : \"study_id\" ,        \"type\" : \"string\"      },      {        \"name\" : \"score_url\" ,        \"type\" : \"string\"      },      {        \"name\" : \"song_url\" ,        \"type\" : \"string\"      },      {        \"name\": \"ref_genome_fa\",        \"type\": \"string\"      },      {        \"name\": \"download\",        \"type\": {  \"type\": \"record\",  \"name\": \"downloadRecord\",  \"fields\" : [      {\"name\" : \"song_cpus\" ,\"type\" : \"int\"      },      {\"name\" : \"song_mem\" ,\"type\" : \"int\"      },      {\"name\" : \"score_cpus\" ,\"type\" : \"int\"      },      {\"name\" : \"score_mem\" ,\"type\" : \"int\"      },      {\"name\": \"score_url\",\"type\": \"string\"      },      {\"name\": \"song_url\",\"type\": \"string\"      }  ]        }      },      {\"name\": \"cpu\",\"type\": \"int\"      },      {\"name\": \"mem\",\"type\": \"int\"      }   ]}"
+}'
+```
+
+### Get Schema
+
+```shell
+curl --location --request GET 'http://localhost:8080/AlignParamsTest/avro/v1' \
+--header 'Content-Type: application/json'
+```
+
+## System Integration
+
+When workflow nodes startup, they request a specific schema based on their configured workflow information.
+
+![Diagram](docs/schema-registry.png)
