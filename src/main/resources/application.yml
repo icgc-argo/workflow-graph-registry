@@ -1,5 +1,5 @@
 server:
-  port: 8990
+  port: 8080
 
 # Datasource
 spring.datasource:
@@ -15,4 +15,4 @@ spring.datasource:
 spring:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
