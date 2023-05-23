@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>workflow-graph-registry</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>workflow-graph-registry</name>
     <description>Workflow Graph Registry</description>
 
