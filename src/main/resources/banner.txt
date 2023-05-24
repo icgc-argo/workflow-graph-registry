@@ -1,0 +1,15 @@
+Spring Boot Version: ${spring-boot.formatted-version}
+Workflow-Graph-Registry Version: ${application.version}
+${AnsiColor.CYAN}      ___           ___           ___                       ___           ___           ___           ___     
+${AnsiColor.CYAN}     /\  \         /\  \         /\  \          ___        /\  \         /\  \         /\  \         |\__\    
+${AnsiColor.CYAN}    /::\  \       /::\  \       /::\  \        /\  \      /::\  \        \:\  \       /::\  \        |:|  |   
+${AnsiColor.CYAN}   /:/\:\  \     /:/\:\  \     /:/\:\  \       \:\  \    /:/\ \  \        \:\  \     /:/\:\  \       |:|  |   
+${AnsiColor.CYAN}  /::\~\:\  \   /::\~\:\  \   /:/  \:\  \      /::\__\  _\:\~\ \  \       /::\  \   /::\~\:\  \      |:|__|__ 
+${AnsiColor.CYAN} /:/\:\ \:\__\ /:/\:\ \:\__\ /:/__/_\:\__\  __/:/\/__/ /\ \:\ \ \__\     /:/\:\__\ /:/\:\ \:\__\     /::::\__\
+${AnsiColor.CYAN} \/_|::\/:/  / \:\~\:\ \/__/ \:\  /\ \/__/ /\/:/  /    \:\ \:\ \/__/    /:/  \/__/ \/_|::\/:/  /    /:/~~/~   
+${AnsiColor.CYAN}    |:|::/  /   \:\ \:\__\    \:\ \:\__\   \::/__/      \:\ \:\__\     /:/  /         |:|::/  /    /:/  /     
+${AnsiColor.CYAN}    |:|\/__/     \:\ \/__/     \:\/:/  /    \:\__\       \:\/:/  /     \/__/          |:|\/__/     \/__/      
+${AnsiColor.CYAN}    |:|  |        \:\__\        \::/  /      \/__/        \::/  /                     |:|  |                  
+${AnsiColor.CYAN}     \|__|         \/__/         \/__/                     \/__/                       \|__|                  
+Spring Boot Version: ${spring-boot.formatted-version}
+Workflow-Graph-Registry Version: ${application.version}

@@ -1,0 +1,18 @@
+server:
+  port: 8990
+
+# Datasource
+spring.datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/registry
+
+  username: postgres
+  password: password
+  max-active: 10
+  max-idle: 1
+  min-idle: 1
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
